@@ -1,5 +1,3 @@
-// Created by Santosh G on 03/08/22.
-
 import 'package:flutter/material.dart';
 import 'package:we_works_movie_app/resources/strings/constants.dart';
 

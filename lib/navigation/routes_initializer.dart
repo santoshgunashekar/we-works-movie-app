@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:we_works_movie_app/navigation/routes.dart';
+import 'package:we_works_movie_app/presentation/splash_screen/splash_screen_route.dart';
 
 Map<String, WidgetBuilder> routes() {
-  return {
-    Routes.landing: (context) => const Placeholder(),
-  };
+  return {};
 }
 
 Route<dynamic>? onGenerateRoute(RouteSettings settings) {
@@ -12,6 +11,8 @@ Route<dynamic>? onGenerateRoute(RouteSettings settings) {
   switch (settings.name) {
     case Routes.landing:
       widget = const Placeholder();
+    case Routes.splashScreen:
+      widget = const SplashScreenRouteProvider();
   }
   return MaterialPageRoute(
     builder: (context) => widget,
