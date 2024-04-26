@@ -7,6 +7,7 @@ class Spacing {
   static const double margin12 = 12.0;
   static const double margin16 = 16.0;
   static const double margin24 = 24.0;
+  static const double margin48 = 48.0;
 
   static const SizedBox sizedBoxHt12 = SizedBox(height: 12);
   static const SizedBox sizedBoxHt24 = SizedBox(height: 24);

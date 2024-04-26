@@ -1,5 +1,3 @@
-// Created by Santosh G on 03/08/22.
-
 import 'package:flutter/material.dart';
 import 'package:we_works_movie_app/style/colors.dart';
 import 'package:we_works_movie_app/style/font_size.dart';
@@ -17,9 +15,11 @@ class ThemeManager extends ChangeNotifier {
     notifyListeners();
   }
 
-  static ThemeData darkTheme = ThemeData.light();
+  static ThemeData darkTheme =
+      ThemeData.light().copyWith(scaffoldBackgroundColor: AppColors.black);
 
-  static ThemeData lightTheme = ThemeData.dark();
+  static ThemeData lightTheme =
+      ThemeData.dark().copyWith(scaffoldBackgroundColor: AppColors.white);
 
   static ThemeData get genericThemeData => ThemeData(
         primaryColor: AppColors.primary,

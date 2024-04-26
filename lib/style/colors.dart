@@ -14,12 +14,4 @@ abstract class AppColors {
   static const Color blue48917B = Color(0xFF48917B);
   static Color green = Colors.greenAccent.shade400;
   static Color red = Colors.red.shade300;
-
-  static List<Color> ratingColors = [
-    Colors.orange,
-    Colors.yellow.shade800,
-    Colors.yellow.shade600,
-    Colors.green.shade900,
-    Colors.green.shade500,
-  ];
 }

@@ -7,7 +7,7 @@ part of 'answer.dart';
 // **************************************************************************
 
 Answer _$AnswerFromJson(Map<String, dynamic> json) => Answer(
-      id: json['id'] as int?,
+      id: (json['id'] as num?)?.toInt(),
     );
 
 Map<String, dynamic> _$AnswerToJson(Answer instance) => <String, dynamic>{
